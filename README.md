@@ -19,6 +19,12 @@ Online bookstore built with WordPress and WooCommerce as part of a web developme
 - Custom CSS for consistent product card heights
 - Child theme with PHP customizations
 
+## Local Environment
+
+Built and run locally using **Local** (by WP Engine), which handles the WordPress +
+MySQL + PHP stack in a self-contained app rather than requiring a manually configured
+XAMPP/Docker setup.
+
 ## Customizations
 
 All custom code lives in `src/functions.php` and `src/style.css`.
