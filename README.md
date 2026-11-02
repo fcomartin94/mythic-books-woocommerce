@@ -25,6 +25,15 @@ Built and run locally using **Local** (by WP Engine), which handles the WordPres
 MySQL + PHP stack in a self-contained app rather than requiring a manually configured
 XAMPP/Docker setup.
 
+## How to reproduce
+
+This repository contains only the custom code (the WordPress install itself is not versioned).
+
+1. Create a site with [Local](https://localwp.com/) (WordPress 6.x, PHP 8.x) and install **WooCommerce**, **Elementor** and the **Astra** theme.
+2. Create a child theme: `wp scaffold child-theme astra-child --parent_theme=astra --activate`.
+3. Copy `src/functions.php` and `src/style.css` into the child theme folder (merge the theme header of `style.css` if needed).
+4. Create the products and categories from the Features list and set free shipping above 30€ under WooCommerce → Settings → Shipping.
+
 ## Customizations
 
 All custom code lives in `src/functions.php` and `src/style.css`.
@@ -56,3 +65,6 @@ Custom PHP cannot be added directly to Astra's `functions.php` as changes are ov
 ## Screenshots
 
 See `/screenshots` folder.
+## License
+
+Released under the [MIT License](LICENSE).
